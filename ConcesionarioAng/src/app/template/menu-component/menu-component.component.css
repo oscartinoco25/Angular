@@ -1,0 +1,12 @@
+/* clase ".nav" para definir que los links no esten pegados a los 
+bordes de la pagina */
+.nav{
+    text-decoration: none;
+    margin: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+/* clase ".nav a" para definir el formato de separación de cada link */
+.nav a{
+    padding: 5px;
+}

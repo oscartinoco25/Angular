@@ -1,0 +1,41 @@
+<div class="container">
+    <div><h3>{{title}}</h3></div>
+    <div>
+        <table class="table table-bordered">
+            <!--7.5) Encabezado de la tabla-->
+            <thead>
+                <th>id_automovil</th>
+                <th>Matricula</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Año</th>
+                <th>Color</th>
+                <th>Kilometraje</th>
+                <th>Puertas</th>
+                <th>Tipo de Combusstible</th>
+                <th>Capacidad de Personas</th>
+                <th>Precio</th>
+            </thead>
+
+            <!--7.6) Cuerpo de la tabla-->
+            <tbody>
+                <!--7.7) "*ngFor" recorre la fila de cada de dato
+                crea una variable "automovil" (singular) para buscarla en la "listAutomoviles"-->
+                <tr *ngFor="let automovil of listAutomoviles">
+                    <td>{{automovil.id_automovil}}</td>
+                    <td>{{automovil.matriculas}}</td>
+                    <td>{{automovil.marcas}}</td>
+                    <td>{{automovil.modelos}}</td>
+                    <td>{{automovil.anios}}</td>
+                    <td>{{automovil.colores}}</td>
+                    <td>{{automovil.kilometrajes}}</td>
+                    <td>{{automovil.can_puertas}}</td>
+                    <td>{{automovil.tipos_Combustibles}}</td>
+                    <td>{{automovil.cap_personas}}</td>
+                    <td>{{automovil.precios}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

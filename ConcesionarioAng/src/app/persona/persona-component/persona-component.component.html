@@ -1,0 +1,35 @@
+<div class="container">
+    <div><h3>{{title}}</h3></div>
+    <div>
+        <table class="table table-bordered">
+            <!--7.5) Encabezado de la tabla-->
+            <thead>
+                <th>id_persona</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th>Edad</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Dirección</th>
+                <th>Contraseña</th>
+            </thead>
+
+            <!--7.6) Cuerpo de la tabla-->
+            <tbody>
+                <!--7.7) "*ngFor" recorre la fila de cada de dato
+                crea una variable "persona" (singular) para buscarla en la "listPersonas"-->
+                <tr *ngFor="let persona of listPersonas">
+                    <td>{{persona.id_persona}}</td>
+                    <td>{{persona.nombres}}</td>
+                    <td>{{persona.apellidos}}</td>
+                    <td>{{persona.correos}}</td>
+                    <td>{{persona.edades}}</td>
+                    <td>{{persona.fecha_nacimientos}}</td>
+                    <td>{{persona.direcciones}}</td>
+                    <td>{{persona.contrasenias}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+    <div><h3>{{title}}</h3></div>
+    <div>
+        <table class="table table-bordered">
+            <!--7.5) Encabezado de la tabla-->
+            <thead>
+                <th>id_venta</th>
+                <th>Fecha de Venta</th>
+                <th>Monto de Venta</th>
+            </thead>
+
+            <!--7.6) Cuerpo de la tabla-->
+            <tbody>
+                <!--7.7) "*ngFor" recorre la fila de cada de dato
+                crea una variable "venta" (singular) para buscarla en la "listVentas"-->
+                <tr *ngFor="let venta of listVentas">
+                    <td>{{venta.id_venta}}</td>
+                    <td>{{venta.fecha_ventas}}</td>
+                    <td>{{venta.monto_ventas}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+    <h3>Lista Roles</h3>
+    <div>
+        <table class="table table-bordered">
+            <!--7.5) Encabezado de la tabla-->
+            <thead>
+                <th>id_rol</th>
+                <th>Nombre</th>
+            </thead>
+
+            <!--7.6) Cuerpo de la tabla-->
+            <tbody>
+                <!--7.7) "*ngFor" recorre la fila de cada de dato
+                crea una variable "rol" (singular) para buscarla en la "listRoles"-->
+                <tr *ngFor="let rol of listRoles">
+                    <td>{{rol.id_rol}}</td>
+                    <td>{{rol.nombre}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
